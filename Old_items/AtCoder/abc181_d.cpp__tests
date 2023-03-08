@@ -1,0 +1,96 @@
+[
+	{
+		"correct_answers":
+		[
+			"Yes"
+		],
+		"test": "1234\n"
+	},
+	{
+		"correct_answers":
+		[
+			"Yes"
+		],
+		"test": "888\n"
+	},
+	{
+		"correct_answers":
+		[
+			"Yes",
+			"No"
+		],
+		"test": "23\n"
+	},
+	{
+		"correct_answers":
+		[
+			"133\n313\n331\n333\nNo",
+			"No"
+		],
+		"test": "1333\n"
+	},
+	{
+		"correct_answers":
+		[
+			"Yes"
+		],
+		"test": "8196\n"
+	},
+	{
+		"correct_answers":
+		[
+			"No"
+		],
+		"test": "6\n"
+	},
+	{
+		"correct_answers":
+		[
+			"Yes"
+		],
+		"test": "8\n"
+	},
+	{
+		"correct_answers":
+		[
+			"Yes"
+		],
+		"test": "16\n"
+	},
+	{
+		"correct_answers":
+		[
+			"Yes",
+			"No"
+		],
+		"test": "23\n"
+	},
+	{
+		"correct_answers":
+		[
+			"Yes"
+		],
+		"test": "812848\n"
+	},
+	{
+		"correct_answers":
+		[
+			"Yes"
+		],
+		"test": "8118118\n"
+	},
+	{
+		"correct_answers":
+		[
+			"Yes"
+		],
+		"test": "46\n"
+	},
+	{
+		"correct_answers":
+		[
+			"Yes"
+		],
+		"test": "121\n"
+	}
+]

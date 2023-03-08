@@ -1,0 +1,34 @@
+[
+	{
+		"correct_answers":
+		[
+			"Case 1: 15\nCase 2: 3\nCase 3: Impossible\nCase 4: Impossible"
+		],
+		"test": "4\n\n5\nA....\n####.\n..B..\n.####\nC.DE.\n\n2\nAC\n.B\n\n2\nA#\n#B\n\n3\nA.C\n##.\nB..\n"
+	},
+	{
+		"correct_answers":
+		[
+			"Case 1: 9"
+		],
+		"test": "1\n\n3\nAC.\n.##\n..B\n",
+		"uncorrect_answers":
+		[
+			"Case 1: Impossible"
+		]
+	},
+	{
+		"correct_answers":
+		[
+			"Case 1: Impossible"
+		],
+		"test": "1\n4\n.AD.\n...F\n.GEB\n..C#"
+	},
+	{
+		"correct_answers":
+		[
+			"Case 1: Impossible\nCase 2: Impossible\nCase 3: 27"
+		],
+		"test": "3\n\n7\nOUJGAV.\n.B.D.Q.\n.XHC.WF\nIRS.E..\n.Y.#P##\n##.K..M\n#NZ##LT\n\n7\nWLCGYOF\nV#.#.E.\n.SP.DRU\nM#AQ.TN\n#K...B.\n.I..X..\n#ZH.J..\n\n4\n.ID#\nGA..\nH#E.\nFC.B\n"
+	}
+]

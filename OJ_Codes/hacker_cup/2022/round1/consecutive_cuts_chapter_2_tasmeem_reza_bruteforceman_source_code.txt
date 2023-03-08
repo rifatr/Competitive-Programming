@@ -1,0 +1,73 @@
+// template from https://github.com/ShahjalalShohag/code-library/blob/master/Strings/KMP.cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+// returns the longest proper prefix array of pattern p
+// where lps[i]=longest proper prefix which is also suffix of p[0...i]
+vector<int> build_lps(vector <int> p) {
+  int sz = p.size();
+  vector<int> lps;
+  lps.assign(sz + 1, 0);
+  int j = 0;
+  lps[0] = 0;
+  for(int i = 1; i < sz; i++) {
+    while(j >= 0 && p[i] != p[j]) {
+      if(j >= 1) j = lps[j - 1];
+      else j = -1;
+    }
+    j++;
+    lps[i] = j;
+  }
+  return lps;
+}
+// returns matches in vector ans in 0-indexed
+vector <int> kmp(vector<int> lps, vector <int> s, vector <int> p) {
+  vector<int>ans;
+  int psz = p.size(), sz = s.size();
+  int j = 0;
+  for(int i = 0; i < sz; i++) {
+    while(j >= 0 && p[j] != s[i])
+      if(j >= 1) j = lps[j - 1];
+      else j = -1;
+    j++;
+    if(j == psz) {
+      j = lps[j - 1];
+      // pattern found in string s at position i-psz+1
+      ans.push_back(i - psz + 1);
+    }
+    // after each loop we have j=longest common suffix of s[0..i] which is also prefix of p
+  }
+  return ans;
+}
+
+int main() {
+  ios_base :: sync_with_stdio(false);
+  cin.tie(0);
+
+  int t;
+  cin >> t;
+  for(int cs = 1; cs <= t; cs++) {
+    int n, k;
+    cin >> n >> k;
+    vector <int> a(n), b(n);
+    for(int i = 0; i < n; i++) cin >> a[i];
+    for(int i = 0; i < n; i++) cin >> b[i];
+    cout << "Case #" << cs << ": ";
+    if(n == 2) {
+      if(k % 2 == 1) swap(a[0], a[1]);
+      cout << (a == b ? "YES" : "NO") << endl;
+    } else if (k == 0) {
+      cout << (a == b ? "YES" : "NO") << endl;
+    } else {
+      a.resize(n + n);
+      for(int i = 0; i < n; i++) a[i + n] = a[i];
+      auto lps = build_lps(a);
+      auto matches = kmp(lps, a, b);
+      if(k == 1 && matches.size() == 2 && matches[0] == 0) {
+        cout << "NO" << endl;
+      } else {
+        cout << (matches.size() ? "YES" : "NO") << endl;
+      }
+    }
+  }
+}

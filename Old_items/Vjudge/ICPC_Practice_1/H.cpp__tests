@@ -1,0 +1,9 @@
+[
+	{
+		"correct_answers":
+		[
+			"Case 1:\nhttp://uva.onlinejudge.org/\nhttp://topcoder.com/\nhttp://uva.onlinejudge.org/\nhttp://www.lightoj.com/\nIgnored\nhttp://uva.onlinejudge.org/\nhttp://acm.sgu.ru/\nhttp://uva.onlinejudge.org/\nhttp://www.lightoj.com/\nhttp://uva.onlinejudge.org/\nhttp://acm.sgu.ru/\nIgnored"
+		],
+		"test": "1\n\nVISIT http://uva.onlinejudge.org/\n\nVISIT http://topcoder.com/\n\nBACK\n\nBACK\n\nBACK\n\nFORWARD\n\nVISIT http://acm.sgu.ru/\n\nBACK\n\nBACK\n\nFORWARD\n\nFORWARD\n\nFORWARD\n\nQUIT\n"
+	}
+]

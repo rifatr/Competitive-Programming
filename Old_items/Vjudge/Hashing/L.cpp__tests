@@ -1,0 +1,16 @@
+[
+	{
+		"correct_answers":
+		[
+			"OK\nOK\nabacaba1\nOK"
+		],
+		"test": "4\nabacaba\nacaba\nabacaba\nacab\n"
+	},
+	{
+		"correct_answers":
+		[
+			"OK\nfirst1\nOK\nsecond1\nOK\nthird1"
+		],
+		"test": "6\nfirst\nfirst\nsecond\nsecond\nthird\nthird\n"
+	}
+]

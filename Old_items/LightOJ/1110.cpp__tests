@@ -1,0 +1,30 @@
+[
+	{
+		"correct_answers":
+		[
+			"Case 1: a\nCase 2: zxb\nCase 3: :("
+		],
+		"test": "3\n\nab\nba\n\nzxcvbn\nhjgasbznxbzmx\n\nyou\nkjhs\n"
+	},
+	{
+		"correct_answers":
+		[
+			"Case 1: bb"
+		],
+		"test": "1\n\nbbaccd\nccbb\n"
+	},
+	{
+		"correct_answers":
+		[
+			"Case 1: mllk"
+		],
+		"test": "1\n\nmllok\nmklolk\n"
+	},
+	{
+		"correct_answers":
+		[
+			"Case 1: edr"
+		],
+		"test": "1\n\nprovender\nedinburgh\n"
+	}
+]

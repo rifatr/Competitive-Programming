@@ -1,0 +1,72 @@
+[
+	{
+		"correct_answers":
+		[
+			"3"
+		],
+		"test": "6\nicefox\n"
+	},
+	{
+		"correct_answers":
+		[
+			"7"
+		],
+		"test": "7\nfirebox\n"
+	},
+	{
+		"correct_answers":
+		[
+			"27"
+		],
+		"test": "48\nffoxoxuvgjyzmehmopfohrupffoxoxfofofoxffoxoxejffo\n"
+	},
+	{
+		"correct_answers":
+		[
+			"0"
+		],
+		"test": "fox\n"
+	},
+	{
+		"correct_answers":
+		[
+			"25"
+		],
+		"test": "49\nffoxoxuvgjyzmehmopfohrupffoxoxfofofoxffoxoxejffox\n"
+	},
+	{
+		"correct_answers":
+		[
+			"0"
+		],
+		"test": "6\nfofoxx\n"
+	},
+	{
+		"correct_answers":
+		[
+			"4"
+		],
+		"test": "4\nfoox\n"
+	},
+	{
+		"correct_answers":
+		[
+			"4"
+		],
+		"test": "7\nfoffoxx\n"
+	},
+	{
+		"correct_answers":
+		[
+			"2"
+		],
+		"test": "8\nfoffoxox\n"
+	},
+	{
+		"correct_answers":
+		[
+			"0"
+		],
+		"test": "9\nfoffoxoxx\n"
+	}
+]

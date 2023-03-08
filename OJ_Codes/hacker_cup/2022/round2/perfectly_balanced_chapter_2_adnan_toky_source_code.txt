@@ -1,0 +1,191 @@
+// #pragma GCC optimize("Ofast,unroll-loops")
+// #pragma GCC target("avx,avx2,fma")
+
+#include <bits/stdc++.h>
+using namespace std;
+
+#define ll long long
+#define pii pair<int, int>
+#define pll pair<long long, long long>
+#define pb push_back
+#define ff first
+#define ss second
+#define YES cout << "YES\n"
+#define NO cout << "NO\n"
+#define CC(x) cout << "Case #" << ++x << ":";
+#define nn "\n"
+#define LL_INF (1LL << 62)
+#define INF (1 << 30)
+#define SetBit(x, k) (x |= (1LL << k))
+#define ClearBit(x, k) (x &= ~(1LL << k))
+#define CheckBit(x, k) ((x>>k)&1)
+#define mod 1000000007
+#define N 1000006
+
+unsigned ll tree[2][4*N];
+unsigned ll arr[2][N];
+
+void build(int id, int l, int r, int nd = 1){
+	if(l==r){
+		tree[id][nd] = arr[id][l];
+		return;
+	}
+
+	int mid = (l+r)/2;
+
+	build(id, l, mid, nd*2);
+	build(id, mid+1, r, nd*2+1);
+
+	tree[id][nd] = tree[id][nd*2]+tree[id][nd*2+1];
+}
+
+void update(int id, int l, int r, int i, int nd = 1){
+	if(l==r){
+		tree[id][nd] = arr[id][l];
+		return;
+	}
+
+	if(r<i || l>i) return;
+
+	int mid = (l+r)/2;
+
+	update(id, l, mid, i, nd*2);
+	update(id, mid+1, r, i, nd*2+1);
+
+	tree[id][nd] = tree[id][nd*2]+tree[id][nd*2+1];
+}
+
+ll query(int id, int l, int r, int i, int j, int nd = 1){
+	if(l>=i && r<=j) return tree[id][nd];
+	if(r<i || l>j) return 0;
+
+	int mid = (l+r)/2;
+	return query(id, l, mid, i, j, nd*2)+query(id, mid+1, r, i, j, nd*2+1);
+}
+
+mt19937_64 rng(chrono::steady_clock::now().time_since_epoch().count());
+
+inline ll gen_random(ll l, ll r) {
+    return uniform_int_distribution<ll>(l, r)(rng);
+}
+
+unsigned ll val1[N];
+unsigned ll val2[N];
+
+unordered_map<unsigned ll, unsigned ll> rev1, rev2;
+
+set<int> indx[N];
+
+int check(int v, int l, int r){
+	int pos = *indx[v].upper_bound(l-1);
+	return pos>=l && pos<=r;
+}
+
+int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+
+	freopen("inp-02.txt", "r", stdin);
+	freopen("output.txt", "w", stdout);
+
+	for(int i = 0; i < N; i++){
+		val1[i] = gen_random(10000000LL, (1LL<<62));
+		val2[i] = gen_random(10000000LL, (1LL<<62));
+
+		rev1[val1[i]] = i;
+		rev2[val2[i]] = i;
+	}
+
+	for(int i = 0; i < N; i++){
+		indx[i].insert(INF);
+	}
+
+	int t, T=0;
+	cin >> t;
+	while(t--){
+		int n;
+		cin >> n;
+
+		unsigned ll x[n+1];
+
+		for(int i = 1; i <= n; i++){
+			cin >> x[i];
+			arr[0][i] = val1[x[i]];
+			arr[1][i] = val2[x[i]];
+			indx[x[i]].insert(i);
+		}
+
+		build(0, 1, n);
+		build(1, 1, n);
+
+		int ans = 0;
+		int q;
+		cin >> q;
+		while(q--){
+			unsigned ll a, b, c;
+			cin >> a >> b >> c;
+
+			if(a==1){
+				indx[x[b]].erase(b);
+				x[b] = c;
+				indx[x[b]].insert(b);
+				arr[0][b] = val1[x[b]];
+				arr[1][b] = val2[x[b]];
+
+				update(0, 1, n, b);
+				update(1, 1, n, b);
+			}
+			else {
+				int l = b, r = c;
+				if((r-l+1)%2==0) continue;
+				int mid = (l+r)/2;
+
+				unsigned ll h1 = query(0, 1, n, l, mid);
+				unsigned ll h2 = query(0, 1, n, mid+1, r);
+				unsigned ll h3 = query(1, 1, n, l, mid);
+				unsigned ll h4 = query(1, 1, n, mid+1, r);
+
+				unsigned ll xr1 = h1-h2;
+				unsigned ll xr2 = h3-h4;
+				if(rev1.count(xr1) && rev2.count(xr2)){
+					ll v1 = rev1[xr1];
+					ll v2 = rev2[xr2];
+
+					if(v1==v2){
+						if(check(v1, l, mid)){
+							ans++;
+							continue;
+						}
+					}
+				}
+				
+				h1 = query(0, 1, n, l, mid-1);
+				h2 = query(0, 1, n, mid, r);
+				h3 = query(1, 1, n, l, mid-1);
+				h4 = query(1, 1, n, mid, r);
+
+				xr1 = h2-h1;
+				xr2 = h4-h3;
+				if(rev1.count(xr1) && rev2.count(xr2)){
+					ll v1 = rev1[xr1];
+					ll v2 = rev2[xr2];
+
+					if(v1==v2){
+						if(check(v1, mid, r)){
+							ans++;
+							continue;
+						}
+					}
+				}
+			}
+		}
+
+		for(int i = 1; i <= n; i++){
+			indx[x[i]].erase(i);
+		}
+
+		cout << "Case #" << ++T << ": " << ans << nn;
+	}
+
+    return 0;
+}

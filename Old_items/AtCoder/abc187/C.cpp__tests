@@ -1,0 +1,16 @@
+[
+	{
+		"correct_answers":
+		[
+			"satisfiable"
+		],
+		"test": "10\nred\nred\nred\n!orange\nyellow\n!blue\ncyan\n!green\nbrown\n!gray\n"
+	},
+	{
+		"correct_answers":
+		[
+			"a"
+		],
+		"test": "6\na\n!a\nb\n!c\nd\n!d\n"
+	}
+]

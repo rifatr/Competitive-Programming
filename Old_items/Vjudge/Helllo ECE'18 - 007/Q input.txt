@@ -1,0 +1,192 @@
+14
+7 11
+pushRight 46
+popRight
+pushLeft -1
+popRight
+pushRight 12
+popLeft
+pushLeft 49
+popLeft
+pushLeft 0
+popRight
+pushLeft -37
+10 84
+pushLeft 1
+pushRight 2
+popLeft
+popRight
+pushLeft 3
+pushRight 4
+popLeft
+popRight
+pushLeft 5
+pushRight 6
+popLeft
+popRight
+pushLeft 7
+pushRight 8
+popLeft
+popRight
+pushLeft 9
+pushRight 10
+popLeft
+popRight
+pushLeft 11
+pushRight 12
+popLeft
+popRight
+pushLeft 13
+pushRight 14
+popLeft
+popRight
+pushLeft 15
+pushRight 16
+popLeft
+popRight
+pushLeft 17
+pushRight 18
+popLeft
+popRight
+pushLeft 19
+pushRight 20
+popLeft
+popRight
+pushLeft 21
+pushRight 22
+popLeft
+popRight
+pushLeft 23
+pushRight 24
+popLeft
+popRight
+pushLeft 25
+pushRight 26
+popLeft
+popRight
+pushLeft 27
+pushRight 28
+popLeft
+popRight
+pushLeft 29
+pushRight 30
+popLeft
+popRight
+pushLeft 31
+pushRight 32
+popLeft
+popRight
+pushLeft 33
+pushRight 34
+popLeft
+popRight
+pushLeft 35
+pushRight 36
+popLeft
+popRight
+pushLeft 37
+pushRight 38
+popLeft
+popRight
+pushLeft 39
+pushRight 40
+popLeft
+popRight
+pushLeft 41
+pushRight 42
+popLeft
+popRight
+10 24
+pushLeft 1
+popLeft
+pushLeft 1
+popLeft
+pushLeft 1
+popLeft
+pushLeft 1
+popLeft
+pushLeft 1
+popLeft
+pushLeft 1
+popLeft
+pushLeft 1
+popLeft
+pushLeft 1
+popLeft
+pushLeft 1
+popLeft
+pushLeft 1
+popLeft
+pushLeft 1
+popLeft
+pushLeft 3
+popLeft
+10 8
+pushLeft -49
+popLeft
+pushRight -64
+popLeft
+popLeft
+pushLeft 53
+pushRight 71
+pushLeft -65
+4 8
+pushRight 3
+pushLeft 77
+popRight
+popLeft
+popRight
+pushRight 41
+popLeft
+pushLeft 39
+9 8
+popRight
+pushRight -44
+pushLeft -92
+pushRight -49
+popLeft
+pushLeft -52
+popLeft
+popRight
+2 5
+pushRight 10
+pushLeft 20
+pushRight 30
+popLeft
+pushLeft 40
+4 6
+pushLeft 1
+pushRight 2
+pushRight 3
+pushRight 4
+popLeft
+popLeft
+4 6
+pushLeft 1
+pushRight 2
+pushRight 3
+pushRight 4
+popLeft
+popLeft
+3 5
+pushLeft 1
+pushRight 2
+pushRight 3
+popLeft
+popLeft
+4 4
+pushLeft -100
+popRight
+popLeft
+pushRight -100
+4 4
+popLeft
+popRight
+popLeft
+popRight
+1 2
+pushLeft 1
+popRight
+2 2
+pushLeft 1
+pushLeft 1

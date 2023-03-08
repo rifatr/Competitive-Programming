@@ -1,0 +1,30 @@
+[
+	{
+		"correct_answers":
+		[
+			"BAD SET\naabcde"
+		],
+		"test": "7\naab\ndefgab\nabcde\naabcde\ncedaaa\nbbbbbbbbbb\njabjjjad\n"
+	},
+	{
+		"correct_answers":
+		[
+			"BAD SET\naacghgh"
+		],
+		"test": "4\naab\naac\naacghgh\naabghgh\n"
+	},
+	{
+		"correct_answers":
+		[
+			"BAD SET\naa"
+		],
+		"test": "3\nb\naa\naa\n"
+	},
+	{
+		"correct_answers":
+		[
+			"BAD SET\nd"
+		],
+		"test": "2\nda\nd\n"
+	}
+]

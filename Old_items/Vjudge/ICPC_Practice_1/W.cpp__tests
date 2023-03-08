@@ -1,0 +1,23 @@
+[
+	{
+		"correct_answers":
+		[
+			"Case 1: 1\nCase 2: 4\nCase 3: 9\nCase 4: 16\nCase 5: 72\nCase 6: 96\nCase 7: 24\nCase 8: 0"
+		],
+		"test": "8\n\n1 1\n\n2 1\n\n3 1\n\n4 1\n\n4 2\n\n4 3\n\n4 4\n\n4 5\n"
+	},
+	{
+		"correct_answers":
+		[
+			"Case 1: 1\nCase 2: 11535864807736999936"
+		],
+		"test": "2 \n3 0\n30 15\n"
+	},
+	{
+		"correct_answers":
+		[
+			"Case 1: 1\nCase 2: 4\nCase 3: 1097712000\nCase 4: 18\nCase 5: 1\nCase 6: 1\nCase 7: 1\nCase 8: 9\nCase 9: 49\nCase 10: 100\nCase 11: 1454424491520\nCase 12: 1\nCase 13: 1\nCase 14: 3265920\nCase 15: 1\nCase 16: 1\nCase 17: 169\nCase 18: 1\nCase 19: 1\nCase 20: 9\nCase 21: 548856000\nCase 22: 42336\nCase 23: 72\nCase 24: 480960480\nCase 25: 1\nCase 26: 1\nCase 27: 9090153072000\nCase 28: 36\nCase 29: 450\nCase 30: 4\nCase 31: 81\nCase 32: 363606122880\nCase 33: 36288000\nCase 34: 96\nCase 35: 882\nCase 36: 169\nCase 37: 18\nCase 38: 1\nCase 39: 81\nCase 40: 196\nCase 41: 153679680\nCase 42: 16\nCase 43: 1\nCase 44: 7620480\nCase 45: 4320\nCase 46: 1\nCase 47: 548856000\nCase 48: 36288000\nCase 49: 144\nCase 50: 117600\nCase 51: 72\nCase 52: 200\nCase 53: 2613600\nCase 54: 1\nCase 55: 490776\nCase 56: 36\nCase 57: 66784798080\nCase 58: 1\nCase 59: 1\nCase 60: 6050\nCase 61: 0\nCase 62: 0\nCase 63: 1\nCase 64: 20888187465600000"
+		],
+		"test": "64\n1 0\n2 1\n11 9\n3 2\n2 0\n3 0\n1 0\n3 1\n7 1\n10 1\n14 9\n10 0\n2 0\n9 8\n1 0\n1 0\n13 1\n4 0\n10 0\n3 1\n11 7\n9 3\n4 2\n14 5\n11 0\n1 0\n15 9\n6 1\n6 2\n2 1\n9 1\n14 8\n10 9\n4 3\n7 2\n13 1\n3 2\n6 0\n9 1\n14 1\n11 6\n4 1\n1 0\n10 5\n6 5\n4 0\n11 7\n10 9\n12 1\n8 4\n4 2\n5 2\n11 4\n10 0\n13 3\n6 1\n13 8\n2 0\n1 0\n11 2\n9 10\n2 3\n29 0\n30 7\n"
+	}
+]

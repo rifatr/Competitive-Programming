@@ -1,0 +1,143 @@
+// Author: rifatrraazz
+// Time: 2021-04-07 16:30:43
+// Problem: F. Co Primes
+// TL: 2000ms 		ML: 1500MB
+// URL: https://algo.codemarshal.org/contests/icpc-dhaka-20-preli/problems/F
+
+#include <bits/stdc++.h>
+
+#define ll long long
+#define pb push_back
+#define ff first
+#define ss second
+
+#define yes cout << "Yes\n"
+#define no cout << "No\n"
+#define Case(i) cout << "Case " << int(i) << ": "
+#define dbg(x) cout << #x << " = " << x << endl
+#define dbg2(x, y) cout << #x << " = " << x << "\t" << #y << " = " << y << endl
+
+#define lop(n) for (int i = 0; i < n; i++)
+#define lopj(n) for (int j = 0; j < n; j++)
+#define mem0(a) memset(a, 0, sizeof a)
+#define mem1(a) memset(a, -1, sizeof a)
+
+#define all(x) x.begin(), x.end()
+#define sorta(x) sort(x.begin(), x.end())
+#define sortd(x) sort(x.rbegin(), x.rend())
+#define bitcount(x) __builtin_popcount(x)
+
+#define vin vector<int>
+#define vll vector<ll>
+#define vst vector<string>
+#define pll pair<ll, ll>
+#define pii pair<int, int>
+#define pss pair<string, string>
+#define vpll vector<pll>
+#define vpii vector<pii>
+
+#define fread freopen("input.txt", "r", stdin)
+#define fwrite freopen("output.txt", "w", stdout)
+#define fastio                                                                 \
+  ios_base::sync_with_stdio(0);                                                \
+  cin.tie(0);                                                                  \
+  cout.tie(0)
+
+#define PI acos(-1.0)
+
+using namespace std;
+
+const int N = 1e6 + 8;
+int ts;
+bool mark[N + 1] = {0};
+vector<ll> prime;
+
+void sieve() {
+  int i, j, limit = sqrt(N * 1.0);
+
+  mark[0] = mark[1] = true;
+
+  for (i = 4; i <= N; i += 2)
+    mark[i] = true;
+
+  for (i = 3; i <= limit; i += 2) {
+    if (!mark[i]) {
+
+      for (j = i * i; j <= N; j += i * 2)
+        mark[j] = true;
+    }
+  }
+
+  for (int i = 2; i < N; i++)
+    if (!mark[i])
+      prime.push_back(i);
+}
+
+void solve() {
+  Case(++ts);
+
+  ll a, b, m;
+  cin >> a >> b >> m;
+  if (a > b)
+    swap(a, b);
+
+  if (a == b) {
+    cout << (a == 1) << '\n';
+    return;
+  }
+
+  ll dif = abs(a - b), x = dif;
+  vll div;
+
+  for (ll z : prime) {
+    if (z * z > x)
+      break;
+
+    if (x % z == 0) {
+      div.pb(z);
+
+      while (!(x % z))
+        x /= z;
+    }
+  }
+  if (x > 1)
+    div.pb(x);
+
+  // dbg(dif);
+  // lop(div.size()) cout << div[i] << ' ';
+  // cout << endl;
+
+  ll sum = 0, sz = div.size();
+  for (ll j = 1; j < (1LL << sz); j++) {
+    ll gun = 1, one = 0;
+    for (ll i = 0; i < sz; i++)
+      if (j & (1LL << i)) {
+        one++;
+        gun *= div[i];
+      }
+
+    ll naw = ((a + m) / gun) - ((a - 1) / gun);
+    // dbg2(naw, sum);
+    if (one % 2 == 1)
+      sum += naw;
+    else
+      sum -= naw;
+  }
+
+  cout << m + 1 - sum << '\n';
+}
+
+int main() {
+  fastio;
+  sieve();
+
+  int tt;
+
+  cin >> tt;
+
+  while (tt--) {
+    solve();
+  }
+
+  return 0;
+}

@@ -1,0 +1,16 @@
+[
+	{
+		"correct_answers":
+		[
+			"Case 1: 5\nCase 2: 10\nCase 3: impossible"
+		],
+		"test": "3\n\n1\n\n2\n\n5\n"
+	},
+	{
+		"correct_answers":
+		[
+			"Case 1: 100\nCase 2: 400000015"
+		],
+		"test": "2\n24\n100000000\n"
+	}
+]

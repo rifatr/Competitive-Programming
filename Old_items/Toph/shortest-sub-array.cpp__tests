@@ -1,0 +1,5 @@
+[
+	{
+		"test": "5 5\n1 5 3 2 4\nQuery 2 8\nUpdate 3 1\nQuery 2 8\nQuery 4 1\nQuery 4 10\n"
+	}
+]

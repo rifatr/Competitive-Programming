@@ -1,0 +1,18 @@
+[
+	{
+		"correct_answers":
+		[
+			"AAACBCAAA",
+			"AAACACAAA"
+		],
+		"test": "AAAACACBA\n"
+	},
+	{
+		"correct_answers":
+		[
+			"NO SOLUTION",
+			"BAAAAAB"
+		],
+		"test": "BAABAAA\n"
+	}
+]

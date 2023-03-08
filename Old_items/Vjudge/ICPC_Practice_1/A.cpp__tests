@@ -1,0 +1,9 @@
+[
+	{
+		"correct_answers":
+		[
+			"Case 1: NO\nCase 2: YES"
+		],
+		"test": "2\n\n3\n\n911\n\n97625999\n\n91125426\n\n5\n\n113\n\n12340\n\n123440\n\n12345\n\n98346\n"
+	}
+]

@@ -1,0 +1,16 @@
+[
+	{
+		"correct_answers":
+		[
+			"1440\n241920\n87091200"
+		],
+		"test": "3\n3\n4\n5\n"
+	},
+	{
+		"correct_answers":
+		[
+			"2\n24"
+		],
+		"test": "2\n1\n2\n"
+	}
+]

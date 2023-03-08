@@ -1,0 +1,143 @@
+[
+	{
+		"correct_answers":
+		[
+			"1"
+		],
+		"test": "35\n"
+	},
+	{
+		"correct_answers":
+		[
+			"0"
+		],
+		"test": "369\n"
+	},
+	{
+		"correct_answers":
+		[
+			"1"
+		],
+		"test": "6227384\n"
+	},
+	{
+		"correct_answers":
+		[
+			"-1"
+		],
+		"test": "11\n"
+	},
+	{
+		"correct_answers":
+		[
+			"-1",
+			"2"
+		],
+		"test": "322\n"
+	},
+	{
+		"correct_answers":
+		[
+			"-1"
+		],
+		"test": "1\n"
+	},
+	{
+		"correct_answers":
+		[
+			"-1"
+		],
+		"test": "2\n"
+	},
+	{
+		"correct_answers":
+		[
+			"0"
+		],
+		"test": "3\n"
+	},
+	{
+		"correct_answers":
+		[
+			"-1"
+		],
+		"test": "4\n"
+	},
+	{
+		"correct_answers":
+		[
+			"-1"
+		],
+		"test": "5\n"
+	},
+	{
+		"correct_answers":
+		[
+			"0"
+		],
+		"test": "6\n"
+	},
+	{
+		"correct_answers":
+		[
+			"0"
+		],
+		"test": "57\n"
+	},
+	{
+		"correct_answers":
+		[
+			"0"
+		],
+		"test": "81\n"
+	},
+	{
+		"correct_answers":
+		[
+			"-1"
+		],
+		"test": "71\n"
+	},
+	{
+		"correct_answers":
+		[
+			"0"
+		],
+		"test": "112244557788\n"
+	},
+	{
+		"correct_answers":
+		[
+			"1"
+		],
+		"test": "115\n"
+	},
+	{
+		"correct_answers":
+		[
+			"0"
+		],
+		"test": "2346117\n"
+	},
+	{
+		"correct_answers":
+		[
+			"1"
+		],
+		"test": "234617\n"
+	},
+	{
+		"correct_answers":
+		[
+			"2"
+		],
+		"test": "336614\n"
+	},
+	{
+		"correct_answers":
+		[
+			"0"
+		],
+		"test": "558\n"
+	}
+]

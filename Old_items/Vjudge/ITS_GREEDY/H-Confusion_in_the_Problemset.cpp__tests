@@ -1,0 +1,44 @@
+[
+	{
+		"correct_answers":
+		[
+			"Case 1: yes\nCase 2: no"
+		],
+		"test": "2\n4\n0 3 1 2\n4\n1 3 3 3\n"
+	},
+	{
+		"correct_answers":
+		[
+			"Case 1: yes\nCase 2: yes\nCase 3: no\nCase 4: yes\nCase 5: no"
+		],
+		"test": "5\n2\n0 0\n3\n0 1 0\n4\n4 5 6 0\n5\n0 1 2 1 0\n1\n1\n"
+	},
+	{
+		"correct_answers":
+		[
+			"Case 1: yes\nCase 2: yes\nCase 3: no"
+		],
+		"test": "3\n3\n0 0 1\n9\n0 1 2 3 4 3 2 1 0\n2\n4 5\n"
+	},
+	{
+		"correct_answers":
+		[
+			"Case 1: yes\nCase 2: yes\nCase 3: no\nCase 4: yes"
+		],
+		"test": "4\n4\n0 1 1 0\n4\n0 2 2 0\n5\n0 1 2 0 0\n5\n0 1 2 1 0\n"
+	},
+	{
+		"correct_answers":
+		[
+			"Case 1: yes\nCase 2: yes\nCase 3: no\nCase 4: yes"
+		],
+		"test": "4\n6\n0 4 2 2 4 0\n5\n0 1 2 1 4\n3\n1 2 3\n10\n0 1 2 3 4 4 3 2 1 0\n"
+	},
+	{
+		"correct_answers":
+		[
+			"Case 1: no\nCase 2: no"
+		],
+		"test": "2\n5\n0 1 1 2 3\n5\n1 2 2 0 3\n"
+	}
+]

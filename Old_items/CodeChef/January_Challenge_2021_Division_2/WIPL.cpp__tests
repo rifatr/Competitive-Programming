@@ -1,0 +1,37 @@
+[
+	{
+		"correct_answers":
+		[
+			"7\n2"
+		],
+		"test": "2\n8 38\n7 8 19 7 8 7 10 20\n4 5\n2 10 4 9\n"
+	},
+	{
+		"correct_answers":
+		[
+			"5"
+		],
+		"test": "1\n5 95\n9 24 56 30 74\n"
+	},
+	{
+		"correct_answers":
+		[
+			"4"
+		],
+		"test": "1\n6 75\n27 64 38 26 64 29\n"
+	},
+	{
+		"correct_answers":
+		[
+			"4\n2\n-1"
+		],
+		"test": "3\n4 100\n72 26 44 87 \n2 1\n54 16 \n2 32\n27 66\n"
+	},
+	{
+		"correct_answers":
+		[
+			"-1"
+		],
+		"test": "1\n2 18\n12 25\n"
+	}
+]

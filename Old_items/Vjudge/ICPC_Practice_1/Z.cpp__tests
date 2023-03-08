@@ -1,0 +1,23 @@
+[
+	{
+		"correct_answers":
+		[
+			"Case 1: 11\nCase 2: 20\nCase 3: 4"
+		],
+		"test": "3\n\n2 36\n\n3 73\n\n3 11\n"
+	},
+	{
+		"correct_answers":
+		[
+			"Case 1: 11\nCase 2: 20\nCase 3: 4\nCase 4: 0\nCase 5: 1\nCase 6: 4664\nCase 7: 605\nCase 8: 5873\nCase 9: 671"
+		],
+		"test": "9\n2 36\n3 73\n3 11\n1 1\n1 2\n2147383647 2147483647\n23990500 24000500\n24000501 24100501\n23999500 24010501\n"
+	},
+	{
+		"correct_answers":
+		[
+			"Case 1: 1\nCase 2: 1\nCase 3: 3"
+		],
+		"test": "3\n2 2\n3 3\n2 5\n"
+	}
+]
