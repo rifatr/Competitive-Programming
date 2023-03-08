@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+#define ll long long
 
 const int N = 20;
 long long GCD(long long a, long long b) { return (b == 0) ? a : GCD(b, a % b); }
@@ -13,26 +14,33 @@ GCD_type ex_GCD(long long a, long long b)
     return {pom.y, pom.x - a / b * pom.y, pom.d};
 }
 
-int t;
-long long a[N], n[N], ans, lcm;
-int main()
-{
-    ios_base::sync_with_stdio(0); cin.tie(0);
-    
-    cin >> t;
-    for(int i = 1; i <= t; i++) cin >> a[i] >> n[i], normalize(a[i], n[i]);
-    ans = a[1];
-    lcm = n[1];
-    for(int i = 2; i <= t; i++)
+pair <ll, ll> crt(vector <ll> &a, vector <ll> &n) { // 1 based indexing
+    ll ans = a[1];
+    ll lcm = n[1];
+    for (int i = 2; i < a.size(); i++)
     {
         auto pom = ex_GCD(lcm, n[i]);
         int x1 = pom.x;
         int d = pom.d;
-        if((a[i] - ans) % d != 0) return cerr << "No solutions" << endl, 0;
+        if ((a[i] - ans) % d != 0) return { -1, -1}; // no solution
+
         ans = normalize(ans + x1 * (a[i] - ans) / d % (n[i] / d) * lcm, lcm * n[i] / d);
         lcm = LCM(lcm, n[i]); // you can save time by replacing above lcm * n[i] /d by lcm = lcm * n[i] / d
     }
-    cout << ans << " " << lcm << endl;
- 
+
+    return {ans, lcm};
+}
+
+int main()
+{
+    ios_base::sync_with_stdio(0); cin.tie(0);
+
+    int t; cin >> t;
+    vector <ll> a(t + 1), n (t + 1);
+    for (int i = 1; i <= t; i++) {
+        cin >> a[i] >> n[i];
+        normalize(a[i], n[i]);
+    }
+
     return 0;
 }
