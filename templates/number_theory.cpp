@@ -10,10 +10,10 @@ vector <int> prime;
 void sieve()
 {
 	mark[0] = mark[1] = true;
-	for (int i = 4; i <= N; i += 2)
+	for (int i = 4; i < N; i += 2)
 		mark[i] = true;
 
-	for (int i = 3; i * i < N; i += 2) {
+	for (int i = 3; i * i <= N; i += 2) {
 		if (!mark[i]) {
 			for (int j = i * i; j < N; j += i * 2)
 				mark[j] = true;

@@ -25,3 +25,7 @@ struct custom_hash {
 /// using namespace __gnu_pbds;
 /// Declaration: gp_hash_table<int, int, custom_hash > numbers;
 /// Usage: Same as unordered_map
+
+#include <ext/pb_ds/assoc_container.hpp>
+using namespace __gnu_pbds;
+gp_hash_table <ll, ll, custom_hash> dp;
