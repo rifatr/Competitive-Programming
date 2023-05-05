@@ -31,3 +31,9 @@ ll LargestPower2LessEqualX(ll x) { for(int i = 1; i <= x / 2; i *= 2) x = x | (x
 // for unlimited stack, run the command in terminal and run the code in terminal
 ulimit -s unlimited
 
+// gp hash table // better than unordered map
+#include <bits/extc++.h>
+using namespace __gnu_pbds;
+gp_hash_table <int, ll> dp;
+
+
