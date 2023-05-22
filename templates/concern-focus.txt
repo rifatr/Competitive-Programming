@@ -1,0 +1,4 @@
+1. recheck your code
+2. check corner cases like n = 1, 0 or negative
+3. check overflow
+4. rearrange the equations

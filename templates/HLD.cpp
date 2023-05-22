@@ -118,10 +118,10 @@ int query(int lo, int hi, int l, int r, int node)
 }
 // basic segment tree ends
 
-inline void upd(int u, int x) {
+inline void update(int u, int x) {
 	update(1, tim, in[u], x, 1);
 }
-inline int qu(int l, int r) {
+inline int query(int l, int r) {
 	return query(1, tim, in[l], in[r], 1);
 }
 inline bool isAnchestor(int u, int v) { // is u a anchestor of v?
@@ -131,19 +131,19 @@ inline bool isAnchestor(int u, int v) { // is u a anchestor of v?
 int query_tree(int u, int v) {
 	int res = 0;
 	while (!isAnchestor(head[u], v)) {
-		int x = qu(head[u], u);
+		int x = query(head[u], u);
 		res += x;
 		u = par[head[u]];
 	}
 	swap(u, v);
 	while (!isAnchestor(head[u], v)) {
-		int x = qu(head[u], u);
+		int x = query(head[u], u);
 		res += x;
 		u = par[head[u]];
 	}
 
 	if (in[v] < in[u]) swap(u, v); // U is LCA.
-	res += qu(u, v) - qu(u, u); // Cost of u (which belongs to [par[u], u]) is not part of this path 
+	res += query(u, v) - query(u, u); // Cost of u (which belongs to [par[u], u]) is not part of this path
 	return res;
 }
 
